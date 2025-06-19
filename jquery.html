@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <style>
+        .lingkaran {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background: black;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="tombol1">Klik untuk merubah warna</button>
+
+    <br><br><div class="lingkaran"></div>
+    <br><br><div class="lingkaran"></div>
+    <br><br><div class="lingkaran"></div>
+    
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $("#tombol1").click(function(){
+            $(".lingkaran").css("background","pink");
+        });
+
+    </script>
+</body>
+</html>
